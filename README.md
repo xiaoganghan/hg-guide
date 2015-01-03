@@ -1,4 +1,4 @@
 hg-guide
 ========
 
-Inspired by http://rogerdudler.github.io/git-guide/
+http://chrishan.github.io/hg-guide
