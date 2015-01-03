@@ -28,7 +28,7 @@
     <div class="scrollblock block-title">
         <h1>hg - the simple guide</h1>
         <p>just a simple guide for getting started with hg. no deep shit ;)</p>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="rogerdudler" data-size="large" data-url="http://chrishan.github.io/hg-guide/" data-related="rogerdudler" data-hashtags="git">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="rogerdudler" data-size="large" data-url="http://chrishan.github.io/hg-guide/" data-related="xiaoganghan" data-hashtags="hg">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         <p class="meta">
             by <a href="https://twitter.com/xiaoganghan">Han Xiaogang</a>
@@ -71,10 +71,7 @@
     <div class="scrollblock block-trees">
         <h2>workflow (http://mercurial.selenic.com/wiki/GitConcepts)</h2>
         <p>
-            your local repository consists of three "trees" maintained by git.
-            the first one is your <code>Working Directory</code> which holds the actual files.
-            the second one is the <code>Index</code> which acts as a staging area and
-            finally the <code>HEAD</code> which points to the last commit you've made.
+            Unlike git, which maintains three "trees" in your local repository: <code>Working Directory, Index, and HEAD</code>, Hg hides such it and handles it automatically so that the user don't need to deal with it.
         </p>
         <img src="img/trees.png" alt="" />
     </div>
@@ -85,7 +82,7 @@
             You can propose changes (add it to the <b>Index</b>) using<br />
             <code>hg add &lt;filename&gt;</code><br />
             <code>hg add</code><br />
-            This is the first step in the basic git workflow. To actually commit these changes use<br />
+            This is the first step in the basic hg workflow. To actually commit these changes use<br />
             <code>hg commit -m "Commit message"</code><br />
             Now the file is committed to the <b>HEAD</b>, but not in your remote repository yet.
         </p>
@@ -137,9 +134,9 @@
             <code>hg merge</code><br />
             to merge another branch into your active branch (e.g. master), use<br />
             <code>hg merge &lt;branch&gt;</code><br />
-            in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in <i>conflicts</i>.
+            in both cases hg tries to auto-merge changes. Unfortunately, this is not always possible and results in <i>conflicts</i>.
             You are responsible to merge those <i>conflicts</i>
-            manually by editing the files shown by git. After changing, you need to commit the results of the merge with<br />
+            manually by editing the files shown by hg. After changing, you need to commit the results of the merge with<br />
             <code>hg commit -m "Merge message"</code><br />
             before merging changes, you can also preview them by using<br />
             <code>hg diff -r &lt;source_branch&gt;:&lt;target_branch&gt;</code>
@@ -181,14 +178,14 @@
             <code>hg update -r default -C</code>
         </p>
     </div>
-    <a name="hints"></a>
+<!--     <a name="hints"></a>
     <div class="scrollblock block-hints">
         <h2>useful hints</h2>
         <p>
             first hint<br />
             <code>hg</code><br />
         </p>
-    </div>
+    </div> -->
     <a name="resources"></a>
     <div class="scrollblock block-resources">
         <h2>links & resources</h2>
@@ -202,8 +199,12 @@
         <p>
             <ul>
                 <li><a href="http://hginit.com/">Hg Init: a Mercurial tutorial</a></li>
+                <li><a href="http://mercurial.selenic.com/wiki/GitConcepts">Mercurial for Git users</a></li>
             </ul>
         </p>
+
+
+
         <h3>get help</h3>
         <p>
             <ul>
